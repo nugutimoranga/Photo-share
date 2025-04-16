@@ -1,0 +1,68 @@
+.gallery-img {
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    border-radius: 10px;
+  }
+  
+  .gallery-img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .spinner-border {
+    width: 3rem;
+    height: 3rem;
+  }
+  
+  .hidden {
+    display: none !important;
+  }
+  .image-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .delete-btn {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: none;
+    color: white;
+    padding: 4px 8px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 2;
+  }
+  
+  .delete-btn:hover {
+    background-color: rgba(255, 0, 0, 0.7);
+  }
+  #dropArea {
+    border: 2px dashed #aaa;
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+    color: #777;
+    transition: background-color 0.3s ease;
+  }
+  
+  #dropArea.dragover {
+    background-color: #e9f5ff;
+    color: #333;
+  }
+  body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+  
+  body.dark-mode .bg-dark {
+    background-color: #1f1f1f !important;
+  }
+  
+  body.dark-mode .modal-content {
+    background-color: #2a2a2a;
+    color: white;
+  }
+        
